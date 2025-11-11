@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atul Kamble | Cloud Solutions Architect & DevOps Trainer</title>
+  <meta name="description" content="Portfolio for Atul Kamble, a cloud solutions architect and DevOps trainer guiding teams across AWS, Azure, and Red Hat Enterprise Linux." />
+  <link rel="canonical" href="https://atulkamble.dev/" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta property="og:title" content="Atul Kamble | Cloud Solutions Architect & DevOps Trainer" />
+  <meta property="og:description" content="Portfolio for Atul Kamble, a cloud solutions architect and DevOps trainer guiding teams across AWS, Azure, and Red Hat Enterprise Linux." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://atulkamble.dev/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Atul Kamble | Cloud Solutions Architect & DevOps Trainer" />
+  <meta name="twitter:description" content="Portfolio for Atul Kamble, a cloud solutions architect and DevOps trainer guiding teams across AWS, Azure, and Red Hat Enterprise Linux." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Atul Kamble",
+      "description": "Cloud solutions architect and DevOps trainer specializing in AWS, Azure, and Red Hat Enterprise Linux.",
+      "url": "https://atulkamble.dev/",
+      "sameAs": [
+        "https://github.com/atulkamble",
+        "https://www.linkedin.com/in/atuljkamble/",
+        "mailto:hello@atulkamble.dev"
+      ],
+      "jobTitle": "Cloud Solutions Architect & DevOps Trainer",
+      "knowsAbout": [
+        "AWS",
+        "Azure",
+        "Red Hat Enterprise Linux",
+        "DevOps",
+        "Terraform",
+        "Kubernetes"
+      ]
+    }
+  </script>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --bg-alt: #111c36;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-strong: #0284c7;
+      --border: rgba(148, 163, 184, 0.2);
+      --card-shadow: rgba(15, 23, 42, 0.45);
+      font-size: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top left, #172554, var(--bg));
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 1rem;
+    }
+
+    .skip-link {
+      position: fixed;
+      left: 1.5rem;
+      top: -4rem;
+      z-index: 100;
+      padding: 0.75rem 1.25rem;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #0f172a;
+      font-weight: 600;
+      transition: top 0.2s ease;
+    }
+
+    .skip-link:focus {
+      top: 1.5rem;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(18px);
+      background: rgba(15, 23, 42, 0.8);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.1rem;
+      letter-spacing: 0.08rem;
+      text-transform: uppercase;
+    }
+
+    .menu {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .menu a {
+      font-weight: 500;
+      color: var(--muted);
+      transition: color 0.2s ease;
+    }
+
+    .menu a[aria-current="page"] {
+      color: var(--accent);
+    }
+
+    .menu a:hover,
+    .menu a:focus {
+      color: var(--accent);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem 4rem;
+    }
+
+    section {
+      padding: 4.5rem 0;
+      border-bottom: 1px solid var(--border);
+      scroll-margin-top: 6rem;
+    }
+
+    .hero {
+      display: grid;
+      gap: 3rem;
+      align-items: center;
+      padding-top: 6rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .hero h1 {
+      font-size: clamp(2.6rem, 5vw, 3.8rem);
+      margin-bottom: 1.5rem;
+      line-height: 1.1;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.85rem 1.8rem;
+      font-weight: 600;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+      color: #0f172a;
+      box-shadow: 0 15px 35px -20px rgba(56, 189, 248, 0.75);
+    }
+
+    .btn-secondary {
+      border-color: var(--border);
+      color: var(--muted);
+    }
+
+    .btn:hover,
+    .btn:focus {
+      transform: translateY(-2px);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    .cards {
+      display: grid;
+      gap: 1.8rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .card {
+      padding: 1.8rem;
+      background: linear-gradient(160deg, rgba(17, 24, 39, 0.9), rgba(17, 24, 39, 0.75));
+      border: 1px solid var(--border);
+      border-radius: 1.5rem;
+      box-shadow: 0 25px 50px -30px var(--card-shadow);
+      transition: transform 0.2s ease, border 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(56, 189, 248, 0.35);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.3rem;
+    }
+
+    .card p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .section-title {
+      font-size: clamp(1.7rem, 3vw, 2.2rem);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-subtitle {
+      color: var(--muted);
+      margin-bottom: 2.5rem;
+      max-width: 550px;
+    }
+
+    .timeline {
+      position: relative;
+      margin-top: 2rem;
+      padding-left: 1.5rem;
+      border-left: 2px solid var(--border);
+    }
+
+    .timeline-item {
+      margin-bottom: 2.5rem;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-item h4 {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+
+    .timeline-item span {
+      display: inline-block;
+      margin-top: 0.35rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .timeline-item p {
+      margin-top: 0.75rem;
+      color: var(--muted);
+    }
+
+    .skills-grid {
+      display: grid;
+      gap: 0.8rem;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      margin-top: 2rem;
+    }
+
+    .skills-grid span {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.65rem 1rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      color: var(--muted);
+      background: rgba(15, 23, 42, 0.9);
+      font-weight: 500;
+    }
+
+    .projects {
+      display: grid;
+      gap: 2rem;
+    }
+
+    .project {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      padding: 1.8rem;
+      border-radius: 1.5rem;
+      border: 1px solid var(--border);
+      background: rgba(17, 24, 39, 0.7);
+      box-shadow: 0 25px 45px -25px var(--card-shadow);
+    }
+
+    .project h3 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+
+    .project p {
+      color: var(--muted);
+    }
+
+    .project-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .project-links a {
+      font-weight: 500;
+      color: var(--accent);
+    }
+
+    .contact {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      align-items: center;
+    }
+
+    .contact-card {
+      padding: 2rem;
+      border-radius: 1.5rem;
+      border: 1px solid var(--border);
+      background: rgba(17, 24, 39, 0.8);
+      box-shadow: 0 25px 50px -25px var(--card-shadow);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem 4rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .socials {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+      justify-content: center;
+    }
+
+    .socials a {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    @media (max-width: 720px) {
+      header {
+        position: static;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      section {
+        padding: 3.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#hero">Skip to main content</a>
+  <header>
+    <nav>
+      <div class="logo">Atul Kamble</div>
+      <div class="menu">
+        <a class="menu-link" href="#about">About</a>
+        <a class="menu-link" href="#experience">Experience</a>
+        <a class="menu-link" href="#projects">Engagements</a>
+        <a class="menu-link" href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div>
+        <h1>Cloud solutions architect & DevOps trainer across AWS, Azure, and RHEL.</h1>
+        <p>I help enterprises modernize infrastructure, coach engineering teams on cloud-native delivery, and design secure platforms that keep operations resilient. From migration roadmaps to hands-on enablement, I turn cloud strategy into measurable impact.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="mailto:hello@atulkamble.dev">Schedule a strategy call</a>
+          <a class="btn btn-secondary" href="#projects">See recent engagements</a>
+        </div>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80" alt="Cloud architecture planning desk" />
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">About</h2>
+      <p class="section-subtitle">I translate complex cloud goals into achievable roadmaps and equip teams with the DevOps habits to sustain them.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>Cloud Strategy & Architecture</h3>
+          <p>Design secure, compliant multi-cloud environments that blend AWS, Azure, and on-premises footprints with automation-first principles.</p>
+        </article>
+        <article class="card">
+          <h3>DevOps Enablement</h3>
+          <p>Introduce CI/CD, observability, and infrastructure-as-code practices that accelerate delivery without compromising reliability.</p>
+        </article>
+        <article class="card">
+          <h3>Enterprise Training</h3>
+          <p>Deliver immersive workshops on AWS, Azure, and Red Hat Enterprise Linux that upskill engineers and align teams around shared playbooks.</p>
+        </article>
+      </div>
+
+      <div class="skills-grid">
+        <span>AWS</span>
+        <span>Azure</span>
+        <span>Red Hat Enterprise Linux</span>
+        <span>Terraform</span>
+        <span>Azure DevOps</span>
+        <span>GitHub Actions</span>
+        <span>Jenkins</span>
+        <span>Kubernetes</span>
+        <span>Docker</span>
+        <span>Ansible</span>
+        <span>CI/CD Pipelines</span>
+        <span>Site Reliability</span>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2 class="section-title">Experience</h2>
+      <p class="section-subtitle">Engagements that shaped my approach to cloud modernization and team coaching.</p>
+      <div class="timeline">
+        <article class="timeline-item">
+          <h4>Principal Cloud Architect & Trainer · Skyline Cloudworks</h4>
+          <span>2020 — Present</span>
+          <p>Lead hybrid-cloud transformation programs for financial and healthcare clients. Built landing zones, standardized security baselines, and delivered DevOps academies that onboarded 150+ engineers.</p>
+        </article>
+        <article class="timeline-item">
+          <h4>Senior DevOps Consultant · AzureBridge Consulting</h4>
+          <span>2017 — 2020</span>
+          <p>Partnered with enterprise platform teams to automate Azure deployments, implement GitOps workflows, and introduce continuous compliance for regulated workloads.</p>
+        </article>
+        <article class="timeline-item">
+          <h4>Linux & Cloud Trainer · Red Hat Authorized Learning Partner</h4>
+          <span>2013 — 2017</span>
+          <p>Delivered RHEL and OpenShift curriculum, co-created lab environments, and mentored administrators pursuing RHCSA/RHCE certifications.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Signature Engagements</h2>
+      <p class="section-subtitle">Sample outcomes from architecture blueprints, platform builds, and training programs.</p>
+      <div class="projects">
+        <article class="project">
+          <div>
+            <h3>AWS Landing Zone Acceleration</h3>
+            <p>Designed and deployed a multi-account AWS landing zone with guardrails, cost governance, and SSO integration for a fintech scaling to global regions.</p>
+            <div class="project-links">
+              <a href="https://github.com/atulkamble/aws-landing-zone" target="_blank" rel="noreferrer">Reference artifacts</a>
+            </div>
+          </div>
+          <div>
+            <h4>Highlights</h4>
+            <p>AWS Control Tower, Terraform, AWS Organizations, CloudWatch, Security Hub</p>
+          </div>
+        </article>
+
+        <article class="project">
+          <div>
+            <h3>Azure DevOps Enablement Program</h3>
+            <p>Structured a 6-week enablement series combining coaching and hands-on labs to help 12 product squads adopt Azure DevOps pipelines and monitoring.</p>
+            <div class="project-links">
+              <a href="https://github.com/atulkamble/azure-devops-labs" target="_blank" rel="noreferrer">Lab materials</a>
+            </div>
+          </div>
+          <div>
+            <h4>Highlights</h4>
+            <p>Azure DevOps, Bicep, Application Insights, GitHub Advanced Security</p>
+          </div>
+        </article>
+
+        <article class="project">
+          <div>
+            <h3>RHEL Automation Blueprint</h3>
+            <p>Created a reusable Ansible-based blueprint that provisions compliant RHEL clusters, integrates patch management, and streamlines DR readiness.</p>
+            <div class="project-links">
+              <a href="https://github.com/atulkamble/rhel-blueprint" target="_blank" rel="noreferrer">Playbooks</a>
+            </div>
+          </div>
+          <div>
+            <h4>Highlights</h4>
+            <p>RHEL, Ansible Automation Platform, Satellite, HashiCorp Vault</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-subtitle">Let's plan a cloud strategy session, custom workshop, or architecture review.</p>
+      <div class="contact">
+        <div class="contact-card">
+          <h3>Partner with confidence</h3>
+          <p>Tackle migrations, platform hardening, or DevOps adoption with a guide who balances executive vision and practitioner detail.</p>
+        </div>
+        <div class="contact-card">
+          <h3>Reach out</h3>
+          <p>Email: <a href="mailto:hello@atulkamble.dev">hello@atulkamble.dev</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/atuljkamble/" target="_blank" rel="noreferrer">linkedin.com/in/atuljkamble</a></p>
+          <p>GitHub: <a href="https://github.com/atulkamble" target="_blank" rel="noreferrer">github.com/atulkamble</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="socials">
+      <a href="https://github.com/atulkamble" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/atuljkamble/" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a href="mailto:hello@atulkamble.dev">Email</a>
+    </div>
+    <div>© <span id="year"></span> Atul Kamble. Empowering teams to build in the cloud.</div>
+  </footer>
+
+  <script>
+    const yearEl = document.getElementById("year");
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
+
+    const menuLinks = Array.from(document.querySelectorAll(".menu-link"));
+    const sectionMap = menuLinks
+      .map((link) => {
+        const hash = link.getAttribute("href");
+        if (!hash || !hash.startsWith("#")) {
+          return null;
+        }
+
+        let section;
+        try {
+          section = document.querySelector(hash);
+        } catch (error) {
+          section = null;
+        }
+
+        if (!section) {
+          return null;
+        }
+
+        return { link, section, hash };
+      })
+      .filter(Boolean);
+
+    if (sectionMap.length) {
+      const fallbackHash = sectionMap[0].hash;
+
+      const setActiveLink = (hash) => {
+        const targetHash = sectionMap.some((entry) => entry.hash === hash)
+          ? hash
+          : fallbackHash;
+
+        sectionMap.forEach(({ link, hash: entryHash }) => {
+          if (entryHash === targetHash) {
+            link.setAttribute("aria-current", "page");
+          } else {
+            link.removeAttribute("aria-current");
+          }
+        });
+      };
+
+      setActiveLink(window.location.hash);
+
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            const visibleEntry = entries
+              .filter((entry) => entry.isIntersecting)
+              .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+            if (!visibleEntry) {
+              return;
+            }
+
+            const matched = sectionMap.find(
+              (entry) => entry.section === visibleEntry.target
+            );
+
+            if (matched) {
+              setActiveLink(matched.hash);
+            }
+          },
+          { rootMargin: "-45% 0px -45% 0px" }
+        );
+
+        sectionMap.forEach(({ section }) => observer.observe(section));
+      } else {
+        let ticking = false;
+        const schedule =
+          window.requestAnimationFrame || ((callback) => setTimeout(callback, 16));
+        window.addEventListener(
+          "scroll",
+          () => {
+            if (ticking) {
+              return;
+            }
+
+            ticking = true;
+
+            schedule(() => {
+              ticking = false;
+              const fromTop = window.scrollY + window.innerHeight * 0.3;
+              let current = sectionMap[0];
+
+              for (const entry of sectionMap) {
+                if (entry.section.offsetTop <= fromTop) {
+                  current = entry;
+                }
+              }
+
+              if (current) {
+                setActiveLink(current.hash);
+              }
+            });
+          },
+          { passive: true }
+        );
+      }
+
+      window.addEventListener("hashchange", () => {
+        setActiveLink(window.location.hash);
+      });
+    }
+  </script>
+</body>
+</html>
